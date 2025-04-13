@@ -4,10 +4,6 @@ Find the count of number of remote job postings per skill   -- the question is k
     -Include skill ID, name, and count of postings requiring the skill
 */
 
-SELECT * FROM job_postings_fact LIMIT 3; -- just to check --
-SELECT * FROM skills_dim LIMIT 3; -- just to check --
-SELECT * FROM skills_job_dim LIMIT 3; -- just to check --
-
 WITH remote_jobs AS (
 SELECT
     skill_id,
